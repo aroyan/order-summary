@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7677a4a-68fe-41a7-ac26-3bd19435735c/deploy-status)](https://app.netlify.com/sites/cocky-wing-31e842/deploys)
 # Frontend Mentor - Order summary card
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)

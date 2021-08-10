@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7677a4a-68fe-41a7-ac26-3bd19435735c/deploy-status)](https://app.netlify.com/sites/cocky-wing-31e842/deploys)
 # Frontend Mentor - Order summary card solution
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
