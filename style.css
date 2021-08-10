@@ -1,0 +1,114 @@
+
+/*Desktop Design*/
+
+/*Mobile First Design*/
+
+@media screen and (max-width: 375px) {
+    body{
+        height: 709px;
+        width: 375px;
+        background-color: hsl(225, 57%, 45%);
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;   
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .main{
+        background-color: white;
+        width: 350px;
+        height: 629px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .image img{
+        width: 350px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+
+    .text{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-top: 15px;
+    }
+
+
+    #description{
+        margin: 0 auto;
+        color: hsl(224, 23%, 55%);
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .annual-group{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color:hsl(225, 100%, 98%);
+        width: 290px;
+        height: 80px;
+        margin-left: 30px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    #annual-plan{
+        font-weight: 700;
+        color: black;
+    }
+
+    .annual-group p{
+        color: hsl(224, 23%, 55%);
+    }
+
+    .annual-group a{
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+        font-weight: 400;
+        color: hsl(223, 47%, 23%);
+    }
+
+    button{
+        width: 290px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 30px;
+        background-color:hsl(245, 75%, 52%);
+        color: white;
+        font-family: inherit;
+        font-weight: 900;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 2px 1px rgba(7, 62, 212, 0.09),
+                    0 4px 2px rgba(7, 62, 212, 0.09),
+                    0 8px 4px rgba(7, 62, 212, 0.09),
+                    0 16px 8px rgba(7, 62, 212, 0.09);
+    }
+
+    a{
+        width: 290px;
+        margin-left: 30px;
+        margin-top: 30px;
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+        font-weight: 700;
+    }
+}
+
+
