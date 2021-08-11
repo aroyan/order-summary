@@ -1,145 +1,287 @@
 
-/*Desktop Design*/
 
-/*Mobile First Design*/
-@media screen and (max-width: 375px) {
-    body{
-        height: 709px;
-        width: 375px;
-        background-color: hsl(225, 57%, 45%);
-        background: url(/images/pattern-background-mobile.svg); 
-        background-repeat: no-repeat;
-        background-size: 200% 200%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-shrink: 0;
-        align-items: center;
-        justify-content: center;   
-        font-family: 'Red Hat Display', sans-serif;
-    }
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(225, 57%, 45%);
+    background: url(/images/pattern-background-mobile.svg); 
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;   
+    font-family: 'Red Hat Display', sans-serif;
+}
 
-    .footer{
-        display: block;
-        font-size: small;
-    }
+.footer{
+    display: block;
+    font-size: small;
+    clear: both;
+    margin-top: 50px;
+}
 
-    .footer a{
-        margin-top: 0;
-        margin-left: 0;
-        text-decoration: none;
-    }
+.footer a{
+    margin-top: 0;
+    margin-left: 0;
+    text-decoration: none;
+}
 
-    .footer a:hover{
-        color: cornflowerblue;
-        text-decoration: underline;
-    }
+.footer a:visited{
+    color: hsl(245, 75%, 52%);
+}
 
-    .main{
-        background-color: white;
-        width: 350px;
-        height: 629px;
-        text-align: center;
-        border-radius: 15px;
-        box-shadow: 0 2px 1px rgba(84, 86, 90, 0.09),
-                    0 4px 2px rgba(94, 96, 100, 0.09),
-                    0 8px 4px rgba(88, 89, 94, 0.09),
-                    0 16px 8px rgba(109, 111, 114, 0.09);
-    }
+.footer a:hover{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
 
-    .image img{
-        width: 350px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        
-    }
+.parent{
+    background-color: white;
+    width: 350px;
+    height: 629px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 1px rgba(84, 86, 90, 0.09),
+                0 4px 2px rgba(94, 96, 100, 0.09),
+                0 8px 4px rgba(88, 89, 94, 0.09),
+                0 16px 8px rgba(109, 111, 114, 0.09);
+}
 
-    .text{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-        margin-top: 15px;
-    }
+.card{
+    display: block;
+    overflow: hidden;
+}
 
+.image img{
+    width: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
 
-    #description{
-        margin: 0 auto;
-        color: hsl(224, 23%, 55%);
-        line-height: 1.5;
-        font-size: 16px;
-    }
-
-    .annual-group{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color:hsl(225, 100%, 98%);
-        width: 290px;
-        height: 80px;
-        margin-left: 30px;
-        margin-top: 20px;
-        border-radius: 10px;
-        font-size: 16px;
-    }
-
-    .annual-group a:hover{
-        color: black;
-    }
-
-    #annual-plan{
-        font-weight: 700;
-        color: black;
-    }
-
-    .annual-group p{
-        color: hsl(224, 23%, 55%);
-    }
-
-    .annual-group a{
-        width: auto;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        text-decoration: underline;
-        font-weight: 400;
-        color: hsl(223, 47%, 23%);
-    }
-
-    button{
-        width: 290px;
-        height: 50px;
-        margin-left: 30px;
-        margin-top: 30px;
-        background-color:hsl(245, 75%, 52%);
-        color: white;
-        font-family: inherit;
-        font-weight: 900;
-        font-kerning: normal;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 2px 1px rgba(7, 62, 212, 0.09),
-                    0 4px 2px rgba(7, 62, 212, 0.09),
-                    0 8px 4px rgba(7, 62, 212, 0.09),
-                    0 16px 8px rgba(7, 62, 212, 0.09);
-    }
-
-    button:hover{
-        color: hsl(224, 23%, 55%);
-    }
-
-    #cancel{
-        width: 290px;
-        margin-left: 30px;
-        margin-top: 30px;
-        text-decoration: none;
-        color: hsl(224, 23%, 55%);
-        font-weight: 700;
-    }
-
-    #cancel:hover{
-        color: black;
-    }
+.text{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-top: 15px;
 }
 
 
+#description{
+    margin: 0 auto;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.annual-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:hsl(225, 100%, 98%);
+    width: 290px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.annual-group a:hover{
+    color: black;
+}
+
+#annual-plan{
+    font-weight: 700;
+    color: black;
+}
+
+.annual-group p{
+    color: hsl(224, 23%, 55%);
+}
+
+.annual-group a{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    font-weight: 400;
+    color: hsl(223, 47%, 23%);
+}
+
+button{
+    width: 290px;
+    height: 50px;
+    margin-top: 30px;
+    background-color:hsl(245, 75%, 52%);
+    color: white;
+    font-family: inherit;
+    font-weight: 900;
+    font-kerning: normal;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px rgba(7, 62, 212, 0.09),
+                0 4px 2px rgba(7, 62, 212, 0.09),
+                0 8px 4px rgba(7, 62, 212, 0.09),
+                0 16px 8px rgba(7, 62, 212, 0.09);
+}
+
+button:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel{
+    margin-top: 30px;
+}
+
+#cancel{
+    width: 290px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+#cancel:hover{
+    color: black;
+}
+
+
+/*Desktop Design*/
+
+@media screen and (min-width: 500px) {
+    body{
+        text-align: center;
+        font-family: 'Red Hat Display', sans-serif;
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .footer{
+        margin-top: 0;
+    }
+
+    .parent {
+            display: grid;
+            min-width: 100vw;
+            min-height: 100vh;
+            place-items: center;
+            overflow: hidden;
+            background: url(images/pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-color: hsl(225, 100%, 94%);
+    }       
+    
+    .card{
+            background-color: white;
+            height: 570px;
+            width: 400px;
+            border-radius: 15px;
+            
+    }
+    
+    .image img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 400px;
+    }
+    
+    #description{
+            font-weight: 500;
+            color: hsl(224, 23%, 55%);
+    }
+    
+    .text{
+        border-radius: 15px;
+    }
+
+    .text h2{
+            font-weight: 900;
+            color: black;
+    
+    }
+    
+    .annual-group{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+            width: 320px;
+            margin-left: 40px;
+            border-radius: 15px;
+            background-color: hsl(225, 100%, 98%);
+            color: hsl(224, 23%, 55%);;
+    }
+    
+    .annual-group span{
+            font-weight: 700;
+            color: black;
+    }
+    
+    .annual-group a{
+            text-decoration: none;
+            color: hsl(224, 23%, 55%);
+    }
+    
+    .annual-group a:hover{
+            text-decoration: underline;
+            color: hsl(245, 75%, 52%);
+    }
+    
+    .annual-group img{
+            height: 100%;
+    }
+    
+    .button button{
+            width: 320px;
+            height: 45px;
+            margin-top: 20px;
+            margin-left: 0;
+            border: none;
+            color: hsl(225, 100%, 98%);
+            font-weight: 700;
+            background-color: hsl(245, 75%, 52%);
+            border-radius: 10px;
+            box-shadow: 0 2px 1px rgba(7, 62, 212, 0.09),
+                        0 4px 2px rgba(7, 62, 212, 0.09),
+                        0 8px 4px rgba(7, 62, 212, 0.09),
+                        0 16px 8px rgba(7, 62, 212, 0.09);
+    }
+    
+    .button button:hover{
+            color: hsl(224, 23%, 55%);
+    }
+    
+    .cancel{
+        margin-top: 15px;
+        font-weight: 700;
+            
+    }
+
+    #cancel{
+        margin-left: 0;
+    }
+    
+    .cancel a{
+            text-decoration: none;
+            color: hsl(224, 23%, 55%);
+            
+    }
+    
+    .cancel a:hover{
+            color: hsl(245, 75%, 52%);
+    }
+    
+    .attribution a{
+            text-decoration: none;
+    }
+    
+    .attribution a:hover{
+            text-decoration: underline;
+    }
+}
