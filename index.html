@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head role="banner">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head role="banner">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
 
-  <title>Frontend Mentor | Order summary card</title>
-  
-</head>
+  <body>
+    <main role="main" class="parent">
+      <div class="card">
+        <div class="image">
+          <img src="images/illustration-hero.svg" alt="" />
+        </div>
 
-<body>
+        <div class="text">
+          <h2>Order Summary</h2>
 
+          <p id="description">
+            You can now listen to millions of <br />
+            songs, audiobooks, and podcasts on <br />
+            any device anywhere you like!
+          </p>
 
-  <main role="main" class="parent">
-    <div class="card">
+          <div class="annual-group">
+            <img src="images/icon-music.svg" alt="icon music" />
+            <p>
+              <span id="annual-plan">Annual Plan</span> <br />
+              $59.99/year
+            </p>
+            <a href="#">Change</a>
+          </div>
 
-      <div class="image">
-        <img src="images/illustration-hero.svg" alt="">
+          <div class="button">
+            <button>Proceed to Payment</button>
+          </div>
+
+          <div class="cancel">
+            <a href="#" id="cancel">Cancel Order</a>
+          </div>
+        </div>
       </div>
 
-      <div class="text">
-
-        <h2>Order Summary</h2>
-
-        <p id="description">You can now listen to millions of <br> songs, audiobooks, and podcasts on <br> any 
-        device anywhere you like!</p>
-
-        <div class="annual-group">
-          <img src="images/icon-music.svg" alt="icon music">
-          <p><span id="annual-plan">Annual Plan</span> <br> $59.99/year</p>
-          <a href="#">Change</a>
-        </div>
-
-        <div class="button">
-          <button>Proceed to Payment</button>
-        </div>
-
-        <div class="cancel">
-          <a href="#" id="cancel">Cancel Order</a>
-        </div>
-
+      <div class="footer" role="contentinfo">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://www.github.com/aroyan">Aroyan.</a>
+        </p>
       </div>
-    </div>
-
-    <div class="footer" role="contentinfo">
-      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.github.com/arbase">Arbase.</a></p>
-    </div>
-    
-
-  </main>
-
-</body>
-
-
+    </main>
+  </body>
 </html>
